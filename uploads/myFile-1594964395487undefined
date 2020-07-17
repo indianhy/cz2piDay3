@@ -1,0 +1,29 @@
+n=int(input())
+print("NO" if n==2 or n%2!=0 else "YES")
+
+
+s={4,7,44,47,74,77,444,447,474,477,744,747,774,777}
+n=int(input())
+if n in s:
+    print("YES")
+else:
+    for i in list(s):
+        if(n%i==0):
+            print("YES")
+            break
+    else:
+        print("NO")
+        
+        
+z=int(input())
+a,b,c=0,0,0
+for _ in range (z):
+    #print(input().split())
+    d=list(map(int,input().split()))
+    a+=d[0]
+    b+=d[1]
+    c+=d[2]
+if a==0 and b==0 and c==0:
+    print("YES")
+else:
+    print("NO")

@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>MY APP</title>
+</head>
+<body>
+
+
+    <!--  SINGLE FILE -->
+    <form action="/uploadfile" enctype="multipart/form-data" method="POST">
+        Select File: <input type="file" name="myFile" />
+        <input type="submit" value="Upload a file" />
+    </form>
+    <br/>
+    <br/>
+
+    <!-- MULTIPLE FILES -->
+
+    <form action="/uploadmultiple" enctype="multipart/form-data" method="POST">
+        Select multiple: <input type="file" name="myFiles" multiple>
+        <input type="submit" value="Upload your files" />
+    </form>
+
+</body>
+</html>
